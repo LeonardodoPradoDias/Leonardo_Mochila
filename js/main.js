@@ -10,4 +10,10 @@ function criarElemento(nome,quantidade){
     console.log(nome)
     console.log(quantidade)
 
+     //<li class="item"><strong>7</strong>Camisas</li>
+   const novoItem = document.criateElemento('li')
+   novoItem.classList.add("item")
+   const numeroItem = document.criateElemento('strong')
+   numeroItem
+
 }
