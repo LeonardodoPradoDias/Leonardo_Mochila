@@ -5,6 +5,6 @@ form.addEventListener("submit", (evento) => {
     
 
     console.log(evento)
-    console.log(evento.target[0].value)
-    console.log(evento.target[1].value)
+    console.log(evento.target.elements['nome'].value)
+    console.log(evento.target.elements['quantidade'].value)
 })
