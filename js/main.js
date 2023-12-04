@@ -14,6 +14,10 @@ function criarElemento(nome,quantidade){
    const novoItem = document.criateElemento('li')
    novoItem.classList.add("item")
    const numeroItem = document.criateElemento('strong')
-   numeroItem
+   numeroItem.innerHTML = quantidade
+
+   novoItem.innerHTML = numeroItem + nome
+
+   console.log(novoItem)
 
 }
