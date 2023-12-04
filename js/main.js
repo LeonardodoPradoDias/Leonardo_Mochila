@@ -33,3 +33,12 @@ if (existe) {
 
     itens.push(itemAtual)
 }
+localStorage.setItem("itens", JSON.stringify(itens))
+
+    nome.value = ""
+    quantidade.value = ""
+})
+
+function criaElemento(item) {
+    const novoItem = document.createElement("li")
+    novoItem.classList.add("item")
