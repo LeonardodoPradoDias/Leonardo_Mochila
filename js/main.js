@@ -42,3 +42,16 @@ localStorage.setItem("itens", JSON.stringify(itens))
 function criaElemento(item) {
     const novoItem = document.createElement("li")
     novoItem.classList.add("item")
+    const numeroItem = document.createElement("strong")
+    numeroItem.innerHTML = item.quantidade
+    numeroItem.dataset.id = item.id
+    novoItem.appendChild(numeroItem)
+    
+    novoItem.innerHTML += item.nome
+
+    lista.appendChild(novoItem)
+}
+
+function atualizaElemento(item) {
+    document.querySelector("[data-id='"+item.id+"']").innerHTML = item.quantidade
+}
