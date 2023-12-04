@@ -14,8 +14,8 @@ form.addEventListener("submit", (evento) => {
 
     const existe = itens.find( elemento => elemento.nome === nome.value )
 
-    const itemAtual = {
-        "nome": nome.value,
+   const itemAtual = {
+        "nome" : nome.value,
         "quantidade": quantidade.value
     }
 

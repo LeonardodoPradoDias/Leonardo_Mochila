@@ -15,3 +15,21 @@ form.addEventListener("submit", (evento) => {
     const existe = itens.find( elemento => elemento.nome === nome.value )
 
 }
+const itemAtual = {
+    "nome" : nome.value,
+    "quantidade": quantidade.value
+}
+
+if (existe) {
+    itemAtual.id = existe.id
+    
+    atualizaElemento(itemAtual)
+
+    itens[existe.id] = itemAtual
+} else {
+    itemAtual.id = itens.length
+
+    criaElemento(itemAtual)
+
+    itens.push(itemAtual)
+}
